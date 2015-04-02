@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>96F249A2-367D-4888-9231-3FC3A05237A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hypnosister</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AE9C8A1B304943C45DCADB11C884505ECABDA3AA</key>
+		<string>https://github.com/lyh118/Hypnosister2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hypnosister.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AE9C8A1B304943C45DCADB11C884505ECABDA3AA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lyh118/Hypnosister2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AE9C8A1B304943C45DCADB11C884505ECABDA3AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AE9C8A1B304943C45DCADB11C884505ECABDA3AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Hypnosister</string>
+		</dict>
+	</array>
+</dict>
+</plist>

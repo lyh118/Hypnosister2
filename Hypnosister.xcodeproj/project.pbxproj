@@ -14,6 +14,7 @@
 		9A270D031ACD19E30028A8FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A270D021ACD19E30028A8FE /* Images.xcassets */; };
 		9A270D061ACD19E30028A8FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A270D041ACD19E30028A8FE /* LaunchScreen.xib */; };
 		9A270D121ACD19E30028A8FE /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A270D111ACD19E30028A8FE /* HypnosisterTests.m */; };
+		9A270D1D1ACD1EE70028A8FE /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A270D1C1ACD1EE70028A8FE /* BNRHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9A270D0B1ACD19E30028A8FE /* HypnosisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A270D101ACD19E30028A8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A270D111ACD19E30028A8FE /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
+		9A270D1B1ACD1EE70028A8FE /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		9A270D1C1ACD1EE70028A8FE /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				9A270D021ACD19E30028A8FE /* Images.xcassets */,
 				9A270D041ACD19E30028A8FE /* LaunchScreen.xib */,
 				9A270CF51ACD19E30028A8FE /* Supporting Files */,
+				9A270D1B1ACD1EE70028A8FE /* BNRHypnosisView.h */,
+				9A270D1C1ACD1EE70028A8FE /* BNRHypnosisView.m */,
 			);
 			path = Hypnosister;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				9A270CFE1ACD19E30028A8FE /* ViewController.m in Sources */,
 				9A270CFB1ACD19E30028A8FE /* AppDelegate.m in Sources */,
+				9A270D1D1ACD1EE70028A8FE /* BNRHypnosisView.m in Sources */,
 				9A270CF81ACD19E30028A8FE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
