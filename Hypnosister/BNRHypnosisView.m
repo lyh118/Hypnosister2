@@ -74,6 +74,16 @@
     
     [path2 stroke];
     // ====== #2.동심원 그리기 E ======
-}
+    
+    
+    // ====== #동메달 과제: 이미지 그리기 S ======
+    
+    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
+    [logoImage drawInRect:bounds];
 
+    // 과제1.이미지 size 조정하기
+    
+    // ====== #동메달 과제: 이미지 그리기 E ======
+    
+}
 @end

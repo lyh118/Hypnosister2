@@ -15,6 +15,7 @@
 		9A270D061ACD19E30028A8FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A270D041ACD19E30028A8FE /* LaunchScreen.xib */; };
 		9A270D121ACD19E30028A8FE /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A270D111ACD19E30028A8FE /* HypnosisterTests.m */; };
 		9A270D1D1ACD1EE70028A8FE /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A270D1C1ACD1EE70028A8FE /* BNRHypnosisView.m */; };
+		9A270D1F1ACD3E190028A8FE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A270D1E1ACD3E190028A8FE /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		9A270D111ACD19E30028A8FE /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
 		9A270D1B1ACD1EE70028A8FE /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
 		9A270D1C1ACD1EE70028A8FE /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		9A270D1E1ACD3E190028A8FE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../../../docs/Solutions/00-Resources/logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				9A270CF51ACD19E30028A8FE /* Supporting Files */,
 				9A270D1B1ACD1EE70028A8FE /* BNRHypnosisView.h */,
 				9A270D1C1ACD1EE70028A8FE /* BNRHypnosisView.m */,
+				9A270D1E1ACD3E190028A8FE /* logo.png */,
 			);
 			path = Hypnosister;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A270D1F1ACD3E190028A8FE /* logo.png in Resources */,
 				9A270D011ACD19E30028A8FE /* Main.storyboard in Resources */,
 				9A270D061ACD19E30028A8FE /* LaunchScreen.xib in Resources */,
 				9A270D031ACD19E30028A8FE /* Images.xcassets in Resources */,
