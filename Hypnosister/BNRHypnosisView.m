@@ -35,7 +35,6 @@
     // 뷰에 들어갈 수 있는 것 중 가장 큰 크기
     float radius = (MIN(bounds.size.width, bounds.size.height) / 2);
     
-    
     UIBezierPath *path = [[UIBezierPath alloc] init];
     
     [path addArcWithCenter:center
@@ -72,8 +71,21 @@
     
     path2.lineWidth = 10;
     
-    //[path2 stroke];
+    [path2 stroke];
     // ====== #2.동심원 그리기 E ======
+    
+    
+    // ====== #3.삼격형 그리기 S ======
+    UIBezierPath *path3 = [[UIBezierPath alloc] init];
+    
+    [path3 moveToPoint:CGPointMake(bounds.size.width/2, bounds.size.height/3)];
+    [path3 addLineToPoint:CGPointMake(bounds.size.width/4, bounds.size.height-bounds.size.height/3)];
+    [path3 addLineToPoint:CGPointMake(bounds.size.width-bounds.size.width/4, bounds.size.height-bounds.size.height/3)];
+    [path3 closePath];
+    
+    path3.lineWidth = 5;
+    [path3 stroke];
+    // ====== #3.삼격형 그리기 E ======
     
     
     // ====== #동메달 과제: 이미지 그리기 S ======
@@ -89,21 +101,6 @@
     
     
     // ====== #금메달 과제: 그림자와 그라디언트 S ======
-    
-    //CGContextSaveGState(logoImage);
-    
-    // 그림자
-    CGContextRef currentContext = UIGraphicsGetCurrentContext();
-    // 어떻게 이렇게 되죠??
-    /*
-    CGContextSaveGState(currentContext);
-    CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
-    
-    [logoImage drawInRect:bounds];
-    
-    CGContextRestoreGState(currentContext);
-    */
-    
     // 출처:http://iphone.hardking.com/326
     /*
     UIGraphicsBeginImageContext(CGSizeMake(logoImage.size.width + 6, logoImage.size.height + 6));
@@ -113,11 +110,12 @@
     UIGraphicsEndImageContext();
     [newImage drawInRect:bounds];
     */
+    
     // 그라디언트
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();    // currentContext를 몰라서 삽질!!
     
     CGContextSaveGState(currentContext);
-    [path stroke];
-    [path addClip];
+    [path3 addClip];
     
     CGFloat locations[2] = {0.0, 1.0};
     CGFloat components[8] = {1.0, 0.0, 0.0, 1.0,
@@ -126,14 +124,25 @@
     CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
     CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, locations, 2);
     
-    CGPoint startPoint = {0.0, 0.0};
-    CGPoint endPoint = {1000.0, 1000.0};
+    CGPoint startPoint = CGPointMake(bounds.size.width/2, bounds.size.height/3);
+    CGPoint endPoint = CGPointMake(bounds.size.width/4, bounds.size.height-bounds.size.height/3);
     
+    // 그라디언트가 어떤식으로 그려지는 걸까요? 시작점? 끝점?
     CGContextDrawLinearGradient(currentContext, gradient, startPoint, endPoint, 0);
     CGGradientRelease(gradient);
     CGColorSpaceRelease(colorspace);
     
     CGContextRestoreGState(currentContext);
+    
+    // 그림자
+    // 어떻게 이렇게 되죠??
+    CGContextSaveGState(currentContext);
+    CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
+     
+    [logoImage drawInRect:bounds];
+     
+    CGContextRestoreGState(currentContext);
+    
     
     // 하트그리기 - CGContextRef
     // 출처:http://devhkh.tistory.com/12
