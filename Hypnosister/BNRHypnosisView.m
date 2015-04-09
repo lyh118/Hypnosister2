@@ -8,19 +8,47 @@
 
 #import "BNRHypnosisView.h"
 
+@interface BNRHypnosisView ()
+
+@property (strong, nonatomic) UIColor *circleColor;
+
+@end
+
 @implementation BNRHypnosisView
 
 // 배경색 투명으로 만들기 (안되요..ㅠㅠ)
-/*
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:<#frame#>];
+    self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
+        self.circleColor = [UIColor lightGrayColor];
     }
     return self;
 }
-*/
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"%@ was touched", self);
+    
+    float red = (arc4random() % 100) / 100.0;
+    float green = (arc4random() % 100) / 100.0;
+    float blue = (arc4random() % 100) / 100.0;
+    
+    UIColor *randomColor = [UIColor colorWithRed:red
+                                           green:green
+                                            blue:blue
+                                           alpha:1.0];
+    self.circleColor = randomColor;
+    
+}
+
+- (void)setCircleColor:(UIColor *)circleColor
+{
+    _circleColor = circleColor;
+    [self setNeedsDisplay];
+}
+
 
 - (void)drawRect:(CGRect)rect
 {
@@ -45,7 +73,8 @@
     
     path.lineWidth = 10;
     
-    [[UIColor lightGrayColor] setStroke];
+    //[[UIColor lightGrayColor] setStroke];
+    [self.circleColor setStroke];
     
     //[path stroke];
     // ====== #1.원 그리기 E ======
